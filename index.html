@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everson Mateus | Arquiteto Urbanista</title>
+  <meta name="description" content="Everson Mateus Rodrigues Pereira, Arquiteto Urbanista. Projetos residenciais, comerciais, industriais, obras públicas, regularização de imóveis, topografia, projetos para o Corpo de Bombeiros e arquitetura informatizada." />
+  <meta name="theme-color" content="#0b0d10" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dncO9ktCJBs5S0fDcImWfkZFs8I1FRgynpSW-Up8CXqwXDri6WaD43hafAhC2sXX5aURPy-v5CiS4HGAd6ifqbVAIsT6Q0yBrSPqP7WH4sIfeEVE0ViqVpDf43aY12aKydkLfI9NlapdZaedfSCZ7oRcSCs2lZCmQXvHM0DVVdDDAEWPvfPg2VQ69jUDlTupouCKLByVlC0PQy7cxhe_cTKR1YO3nT4WvVHlB27V840A69u2qu_ORPPxA85WO1027aJawY5prcZUuI5IEFVETw" charset="UTF-8"></script><style>
+    :root{
+      --bg:#090a0c;
+      --bg-2:#0d1014;
+      --surface:#101318;
+      --surface-2:#151a20;
+      --surface-3:#1b222a;
+      --text:#eef2f5;
+      --muted:#9aa6b1;
+      --line:rgba(255,255,255,.08);
+      --line-strong:rgba(255,255,255,.16);
+      --accent:#b59b73;
+      --shadow:0 24px 70px rgba(0,0,0,.36);
+      --container:1280px;
+      --transition:220ms ease;
+      --header-h:96px;
+    }
+
+    body.light{
+      --bg:#ece5da;
+      --bg-2:#e3dbce;
+      --surface:#f7f1e8;
+      --surface-2:#efe7dc;
+      --surface-3:#e4dbcd;
+      --text:#171b20;
+      --muted:#5d6873;
+      --line:rgba(0,0,0,.10);
+      --line-strong:rgba(0,0,0,.18);
+      --accent:#79654a;
+      --shadow:0 18px 54px rgba(30,26,18,.12);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    *::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{
+      font-family:'Inter',sans-serif;
+      background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);
+      color:var(--text);
+      line-height:1.6;
+      overflow-x:hidden;
+      padding-top:var(--header-h);
+      transition:background var(--transition),color var(--transition);
+    }
+
+    .site-noise{
+      position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:1;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.45) .6px, transparent .7px),
+        radial-gradient(circle at 80% 50%, rgba(255,255,255,.25) .5px, transparent .6px),
+        radial-gradient(circle at 40% 80%, rgba(255,255,255,.22) .5px, transparent .6px);
+      background-size:18px 18px,24px 24px,22px 22px;
+      mix-blend-mode:soft-light;
+    }
+
+    main,header,footer{position:relative;z-index:2}
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea{font:inherit}
+
+    .container{
+      width:min(100%,var(--container));
+      margin:0 auto;
+      padding-left:16px;
+      padding-right:16px;
+    }
+
+    .section{padding:96px 0}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:8px 14px;border:1px solid var(--line);border-radius:999px;
+      background:rgba(255,255,255,.01);color:var(--muted);
+      font-size:.8rem;margin-bottom:18px;text-transform:uppercase;letter-spacing:.16em;
+    }
+    .eyebrow::before{
+      content:"";width:10px;height:10px;background:var(--accent);
+      clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+    }
+
+    .section-header{max-width:860px;margin-bottom:38px}
+    .section-header h2{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.1rem,4vw,4rem);
+      line-height:.95;letter-spacing:-.05em;
+      margin-bottom:14px;text-transform:uppercase;
+    }
+    .section-header p{color:var(--muted);font-size:.98rem;max-width:720px}
+
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      min-height:56px;padding:0 22px;border:1px solid transparent;
+      font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.82rem;
+      transition:transform var(--transition),background var(--transition),border-color var(--transition),color var(--transition);
+      cursor:pointer;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--accent);color:#111}
+    .btn-primary:hover{background:#c3aa82}
+    .btn-secondary{background:transparent;border-color:var(--line-strong);color:var(--text)}
+    .btn-secondary:hover{background:var(--surface-2)}
+
+    .site-header{
+      position:fixed;top:0;left:0;width:100%;z-index:100;
+      background:rgba(9,10,12,.62);
+      backdrop-filter:blur(18px) saturate(140%);
+      -webkit-backdrop-filter:blur(18px) saturate(140%);
+      border-bottom:1px solid rgba(255,255,255,.10);
+      box-shadow:0 10px 30px rgba(0,0,0,.18);
+    }
+    body.light .site-header{
+      background:rgba(9,10,12,.62);
+      border-bottom-color:rgba(255,255,255,.10);
+    }
+
+    .nav{
+      min-height:var(--header-h);
+      display:flex;align-items:center;justify-content:space-between;
+      gap:20px;position:relative;padding:14px 0;
+      height: 6rem;
+    }
+    .brand{display:inline-flex;align-items:center;line-height:1;flex-shrink:0}
+    .brand-logo{
+      display:block;width:clamp(180px,22vw,280px);height:auto;object-fit:contain;
+      filter:drop-shadow(0 8px 18px rgba(0,0,0,.22));
+    }
+
+    .nav-links{
+      display:flex;align-items:center;gap:28px;margin-left:auto;margin-right:18px;
+    }
+    .nav-links a{
+      color:#eef2f5;position:relative;font-size:.88rem;
+      text-transform:uppercase;letter-spacing:.14em;transition:color var(--transition);
+    }
+    .nav-links a::after{
+      content:"";position:absolute;left:0;bottom:-10px;width:0;height:2px;
+      background:var(--accent);transition:width var(--transition);
+    }
+    .nav-links a:hover,.nav-links a.active{color:#fff}
+    .nav-links a:hover::after,.nav-links a.active::after{width:100%}
+
+    .nav-actions{display:flex;align-items:center;gap:12px}
+    .theme-toggle,.menu-toggle{
+      width:50px;height:50px;border:1px solid rgba(255,255,255,.16);
+      background:transparent;color:#eef2f5;display:inline-flex;
+      align-items:center;justify-content:center;cursor:pointer;
+      transition:transform var(--transition),background var(--transition);
+    }
+    .theme-toggle:hover,.menu-toggle:hover{transform:translateY(-2px);background:rgba(255,255,255,.04)}
+    .desktop-cta{display:inline-flex}
+    .menu-toggle{display:none}
+
+    .theme-toggle{position:relative;overflow:hidden}
+    .theme-toggle .theme-icon{
+      position:absolute;width:20px;height:20px;stroke:currentColor;stroke-width:1.8;fill:none;
+      transition:opacity 220ms ease,transform 220ms ease;
+    }
+    .theme-toggle .icon-sun{opacity:0;transform:scale(.7) rotate(-20deg)}
+    .theme-toggle .icon-moon{opacity:1;transform:scale(1) rotate(0)}
+    body.light .theme-toggle .icon-sun{opacity:1;transform:scale(1) rotate(0)}
+    body.light .theme-toggle .icon-moon{opacity:0;transform:scale(.7) rotate(20deg)}
+
+    .hero{
+      min-height:calc(100vh - var(--header-h));
+      display:flex;align-items:center;padding:44px 0 84px;position:relative;
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size:42px 42px;
+      mask-image:linear-gradient(180deg, rgba(0,0,0,.65), transparent 88%);
+      pointer-events:none;
+    }
+    body.light .hero::before{
+      background-image:
+        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+    }
+
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:24px;align-items:stretch}
+    .hero-copy,.hero-card,.panel,.service-card,.proof-card,.process-card,.testimonial,.contact-card,.profile-card,.slider-wrap,.cta-box,.faq-item{
+      box-shadow:var(--shadow);position:relative
+    }
+    .hero-copy,.hero-card,.panel,.slider-wrap,.cta-box{border:1px solid var(--line-strong)}
+
+    .hero-copy{
+      background:linear-gradient(180deg,rgba(255,255,255,.01),rgba(255,255,255,.03)),var(--surface);
+      padding:38px;overflow:hidden;
+    }
+    .hero-copy h1{
+      font-family:'Playfair Display',serif;
+      font-size:clamp(3rem,6vw,6rem);
+      line-height:.88;letter-spacing:-.07em;margin-bottom:20px;text-transform:uppercase;
+      max-width:760px;
+    }
+    .hero-copy p{color:var(--muted);max-width:640px;font-size:1rem;margin-bottom:28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+    .hero-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+
+    .metric{
+      border:1px solid var(--line);background:var(--surface-2);padding:18px;min-height:128px;position:relative;
+    }
+    .metric::after{
+      content:"";position:absolute;inset:auto 0 0 0;height:2px;
+      background:linear-gradient(90deg,var(--accent),transparent 70%);opacity:.7;
+    }
+    .metric strong{
+      display:block;font-size:.98rem;color:var(--accent);margin-bottom:8px;
+      text-transform:uppercase;letter-spacing:.1em;
+    }
+    .metric span{color:var(--muted);font-size:.88rem}
+
+    .hero-card{min-height:100%;overflow:hidden;background:#121416;isolation:isolate}
+    .hero-card img{
+      width:100%;height:100%;min-height:680px;object-fit:cover;
+      filter:saturate(.78) contrast(1.08) brightness(.82) grayscale(.08);
+      transform:scale(1.03);transition:transform 1200ms ease;
+    }
+    .hero-card:hover img{transform:scale(1.06)}
+    .hero-card .hero-axes{
+      position:absolute;inset:0;z-index:2;pointer-events:none;
+      background:
+        linear-gradient(90deg, transparent 14%, rgba(255,255,255,.08) 14.2%, transparent 14.4%),
+        linear-gradient(180deg, transparent 78%, rgba(255,255,255,.08) 78.2%, transparent 78.4%);
+      mix-blend-mode:overlay;opacity:.5;
+    }
+    .hero-card::after{
+      content:"";position:absolute;inset:0;z-index:1;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.56)),
+        linear-gradient(90deg,rgba(0,0,0,.08),transparent 34%,transparent 66%,rgba(0,0,0,.1));
+    }
+    .floating-note{
+      position:absolute;left:24px;right:24px;bottom:24px;z-index:3;
+      padding:18px 20px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(10,12,14,.88);backdrop-filter:blur(12px);
+    }
+    body.light .floating-note{background:rgba(247,242,234,.92)}
+    .floating-note strong{
+      display:block;margin-bottom:6px;font-size:.9rem;text-transform:uppercase;letter-spacing:.16em;
+    }
+    .floating-note p{color:var(--muted);font-size:.86rem}
+
+    .about-profile,.about-grid,.contact-grid,.proof-grid,.services-grid,.process-grid,.testimonials-grid,.faq-grid{
+      display:grid;gap:16px
+    }
+    .about-profile{grid-template-columns:360px 1fr;margin-bottom:22px}
+    .about-grid,.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .proof-grid,.services-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    .service-media{
+      width:100%;
+      height:180px;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+      margin:-24px -24px 18px -24px;
+      background:var(--surface-3);
+    }
+    .service-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:saturate(.88) contrast(1.02) brightness(.88);
+      transition:transform 900ms ease, filter 300ms ease;
+    }
+    .service-card:hover .service-media img{
+      transform:scale(1.04);
+      filter:saturate(.92) contrast(1.03) brightness(.92);
+    }
+    .process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .testimonials-grid,.faq-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    .profile-photo,.profile-card,.panel,.proof-card,.service-card,.portfolio-card,.process-card,.testimonial,.contact-card,.faq-item{
+      border:1px solid var(--line);background:var(--surface);
+      transition:transform var(--transition),border-color var(--transition),background var(--transition),box-shadow var(--transition);
+    }
+    .profile-photo:hover,.profile-card:hover,.panel:hover,.proof-card:hover,.service-card:hover,.portfolio-card:hover,.process-card:hover,.testimonial:hover,.contact-card:hover,.faq-item:hover{
+      transform:translateY(-4px);border-color:rgba(179,154,116,.42);background:var(--surface-2);
+    }
+
+    .profile-photo{overflow:hidden}
+    .profile-photo img{width:100%;height:100%;min-height:460px;object-fit:cover;filter:saturate(.88) contrast(1.04) brightness(.92)}
+    .profile-card,.panel,.proof-card,.service-card,.process-card,.testimonial,.contact-card,.faq-item{padding:24px}
+    .profile-card .role{
+      color:var(--accent);font-size:.82rem;text-transform:uppercase;letter-spacing:.18em;margin-bottom:16px;display:block;
+    }
+    .profile-card h3,.proof-card h3,.service-card h3,.portfolio-card h3,.process-card h3,.testimonial h3,.contact-card h3,.faq-item h3,.list-item h3{
+      font-size:.94rem;margin:14px 0 8px;text-transform:uppercase;letter-spacing:.08em;line-height:1.35;
+    }
+    .profile-card p,.panel p,.proof-card p,.service-card p,.portfolio-card p,.process-card p,.testimonial p,.contact-card p,.faq-item p,.list-item p{
+      color:var(--muted);font-size:.92rem;
+    }
+
+    .profile-meta,.about-list,.contact-list{display:grid;gap:12px}
+    .profile-meta .meta-item,.tag{
+      padding:14px 16px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);
+      font-size:.84rem;text-transform:uppercase;letter-spacing:.08em;
+    }
+
+    .list-item{
+      display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);background:var(--surface);
+      transition:transform var(--transition),border-color var(--transition),background var(--transition)
+    }
+    .list-item:hover{transform:translateY(-4px);border-color:rgba(179,154,116,.42);background:var(--surface-2)}
+    .list-item i,.index{
+      width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;
+      border:1px solid var(--line-strong);background:var(--surface-3);color:var(--accent);
+      font-style:normal;font-weight:700;flex-shrink:0;font-size:.84rem;letter-spacing:.08em;
+    }
+
+    .tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .tag{padding:9px 12px;font-size:.74rem;letter-spacing:.12em}
+
+    .project-filters{
+      display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;padding:10px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01)),var(--surface);
+      box-shadow:var(--shadow);
+    }
+    .filter-btn{
+      padding:12px 18px;border:1px solid var(--line);background:transparent;color:var(--muted);
+      font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;cursor:pointer;position:relative;overflow:hidden;
+      transition:background var(--transition),border-color var(--transition),color var(--transition),transform var(--transition),box-shadow var(--transition);
+    }
+    .filter-btn::after{
+      content:"";position:absolute;inset:auto 0 0 0;height:2px;background:var(--accent);
+      transform:scaleX(0);transform-origin:left;transition:transform 220ms ease;
+    }
+    .filter-btn:hover,.filter-btn.active{
+      background:rgba(181,155,115,.10);border-color:rgba(181,155,115,.34);color:var(--text);
+      transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.12);
+    }
+    .filter-btn:hover::after,.filter-btn.active::after{transform:scaleX(1)}
+
+    .project-category{display:none}
+    .project-category.active{display:block;animation:categoryFadeUp 300ms ease}
+    @keyframes categoryFadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+    .category-carousel{
+      position:relative;
+      max-width:980px;
+      margin:0 auto;
+    }
+    .category-controls{
+      display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px
+    }
+    .category-counter{
+      color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.14em
+    }
+    .slider-wrap{
+      background:var(--surface);
+      padding:22px;
+      overflow:hidden;
+      width:100%;
+      max-width:100%
+    }
+    .slider-nav{display:flex;justify-content:flex-end;gap:10px;margin-bottom:18px}
+    .slider-btn{
+      width:54px;height:54px;border:1px solid var(--line-strong);background:rgba(255,255,255,.02);color:var(--text);
+      cursor:pointer;font-size:1rem;backdrop-filter:blur(10px);
+      transition:transform 240ms ease,background 240ms ease,border-color 240ms ease;
+    }
+    .slider-btn:hover{
+      transform:translateY(-2px);background:rgba(181,155,115,.10);border-color:rgba(179,154,116,.42)
+    }
+    .category-viewport{
+      position:relative;
+      overflow:hidden;
+      width:100%;
+    }
+    .category-track{
+      display:flex;
+      width:100%;
+      transition:transform 700ms cubic-bezier(.22,1,.36,1);
+      will-change:transform;
+    }
+    .category-slide{
+      min-width:100%;
+      width:100%;
+      flex:0 0 100%;
+      padding:0 2px;
+    }
+
+    .portfolio-card{overflow:hidden;padding:0;background:var(--surface-2);width:100%;max-width:960px;margin:0 auto}
+    .portfolio-thumb{
+      width:100%;max-width:920px;height:520px;margin:0 auto;overflow:hidden;position:relative;border-bottom:1px solid var(--line);
+    }
+    .portfolio-thumb::after{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.2)),
+        linear-gradient(90deg,rgba(0,0,0,.1),transparent 34%,transparent 66%,rgba(0,0,0,.1));
+    }
+    .portfolio-thumb img{
+      width:100%;height:100%;object-fit:cover;
+      transition:transform 1200ms cubic-bezier(.22,1,.36,1),filter 700ms ease;
+      filter:saturate(.84) contrast(1.04) brightness(.9);transform:scale(1.01);
+    }
+    .portfolio-card:hover .portfolio-thumb img{transform:scale(1.045)}
+    .portfolio-content{padding:24px 26px 26px}
+    .portfolio-meta{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px;
+    }
+
+    .contact-form{display:grid;gap:14px}
+    .field{display:grid;gap:8px}
+    .field label{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em}
+    .field input,.field textarea{
+      width:100%;padding:16px 18px;border:1px solid var(--line-strong);background:rgba(255,255,255,.01);color:var(--text);
+      outline:none;transition:border-color var(--transition),background var(--transition),box-shadow var(--transition);
+    }
+    .field input:focus,.field textarea:focus{
+      border-color:rgba(179,154,116,.6);background:var(--surface-2);box-shadow:inset 0 0 0 1px rgba(179,154,116,.35);
+    }
+    .field textarea{min-height:140px;resize:vertical}
+
+    .cta-box{
+      padding:40px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01)),var(--surface)
+    }
+    .cta-box h2{
+      font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);
+      line-height:.94;margin-bottom:14px;text-transform:uppercase;letter-spacing:-.05em;max-width:900px;
+    }
+    .cta-box p{max-width:740px;color:var(--muted);margin-bottom:24px}
+
+    .site-footer{
+      border-top:1px solid rgba(255,255,255,.08);padding:28px 0;background:rgba(9,10,12,.88)
+    }
+    body.light .site-footer{background:rgba(9,10,12,.88);border-top-color:rgba(255,255,255,.08)}
+    .footer-inner{
+      display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;min-height:6rem;text-align:center
+    }
+    .footer-copy{display:grid;gap:6px}
+    .footer-copy strong{color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem}
+    .footer-copy span,.footer-copy p{color:#eef2f5;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em}
+
+    .whatsapp-float{
+      position:fixed;right:20px;bottom:20px;z-index:90;width:64px;height:64px;
+      display:inline-flex;align-items:center;justify-content:center;background:#25D366;color:#fff;
+      border-radius:999px;border:0;box-shadow:0 12px 32px rgba(37,211,102,.34);
+      transition:transform 220ms ease,box-shadow 220ms ease,filter 220ms ease,background 220ms ease;
+    }
+    .whatsapp-float:hover{
+      transform:translateY(-3px) scale(1.03);background:#25D366;filter:brightness(1.03);
+      box-shadow:0 18px 38px rgba(37,211,102,.42);
+    }
+    .whatsapp-float svg{width:32px;height:32px;fill:currentColor}
+
+    @media (max-width:1080px){
+      .hero-grid,.proof-grid,.services-grid,.process-grid,.testimonials-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-metrics{grid-template-columns:1fr}
+      .hero-card img{min-height:560px}
+    }
+
+    @media (max-width:980px){
+      .about-profile{grid-template-columns:1fr}
+      .profile-photo img{min-height:340px}
+    }
+
+    @media (max-width:932px){
+      .menu-toggle{display:inline-flex}
+      .desktop-cta{display:none}
+      .nav{min-height:76px;padding:12px 0}
+      .brand-logo{width:clamp(150px,34vw,210px)}
+      .nav-links{
+        position:absolute;top:calc(100% + 8px);left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:10px;
+        margin:0;padding:18px;background:rgba(9,10,12,.98);border:1px solid rgba(255,255,255,.10);
+        box-shadow:0 18px 40px rgba(0,0,0,.28);z-index:80;
+      }
+      body.light .nav-links{background:rgba(9,10,12,.98)}
+      .nav-links.show{display:flex}
+      .nav-links a,body.light .nav-links a{
+        color:#eef2f5;width:100%;padding:14px 12px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);
+      }
+      .nav-links a::after{display:none}
+      .nav-links a:hover,.nav-links a:focus-visible,body.light .nav-links a:hover,body.light .nav-links a:focus-visible{
+        background:rgba(181,155,115,.14);border-color:rgba(181,155,115,.34);color:#fff;transform:translateX(4px);
+      }
+
+      .section{padding:74px 0}
+      .hero{padding:30px 0 74px}
+      .hero-grid,.proof-grid,.services-grid,.process-grid,.testimonials-grid,.faq-grid,.about-profile{grid-template-columns:1fr}
+      .hero-copy h1{font-size:clamp(2.7rem,12vw,4.6rem)}
+      .hero-card img{min-height:420px}
+      .floating-note{left:16px;right:16px;bottom:16px}
+      .portfolio-thumb{width:100%;height:auto;aspect-ratio:16 / 10}
+      .footer-inner{justify-content:center;text-align:center}
+    }
+
+    @media (max-width:520px){
+      .container{padding-left:12px;padding-right:12px}
+      .hero-copy,.panel,.service-card,.process-card,.testimonial,.contact-card,.proof-card,.faq-item,.cta-box,.portfolio-content,.slider-wrap,.profile-card{padding:20px}
+      .hero-actions .btn{width:100%}
+      .portfolio-thumb{aspect-ratio:4 / 3}
+      .whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}
+      .footer-copy strong,.footer-copy span,.footer-copy p{font-size:.68rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Everson Mateus, Arquiteto Urbanista">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Menu principal">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 0 1 11.21 3c0 .27-.01.54-.01.81A9 9 0 1 0 20.19 13c.28 0 .54 0 .81-.01Z"></path>
+          </svg>
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.5v2.2M12 19.3v2.2M21.5 12h-2.2M4.7 12H2.5M18.72 5.28l-1.56 1.56M6.84 17.16l-1.56 1.56M18.72 18.72l-1.56-1.56M6.84 6.84 5.28 5.28"></path>
+          </svg>
+        </button>
+        <a class="btn btn-primary desktop-cta" href="#contato">Solicitar orçamento</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu responsivo" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Projetos arquitetônicos com clareza técnica e valorização real</div>
+          <h1>Arquitetura e urbanismo com mais presença, segurança e valor para o seu imóvel.</h1>
+          <p>
+            Everson Mateus Rodrigues Pereira desenvolve projetos residenciais, comerciais, industriais e obras públicas com direção técnica, organização documental e apresentação profissional.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+            <a href="#projetos" class="btn btn-secondary">Ver projetos</a>
+          </div>
+
+         
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-axes" aria-hidden="true"></div>
+          <img id="heroImage" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80" alt="Projeto arquitetônico contemporâneo de alto padrão" />
+          <div class="floating-note">
+            <strong>Atendimento profissional</strong>
+            <p>Projetos com leitura técnica, apresentação clara e foco em valorização do espaço.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Sobre o profissional</div>
+          <h2>Arquitetura pensada para resolver, valorizar e comunicar melhor cada projeto.</h2>
+          <p>Uma apresentação profissional começa com confiança. Por isso, esta seção reúne identidade, atuação e diferenciais de forma mais clara.</p>
+        </div>
+
+        <div class="about-profile">
+          <div class="profile-photo">
+            <img src="assets/Everson.jpg" alt="Imagem representativa de profissional de arquitetura em obra" />
+          </div>
+
+          <div class="profile-card">
+            <h3>Apresentação profissional</h3>
+            <p><strong>Everson Mateus Rodrigues Pereira</strong> atua como Arquiteto Urbanista, com registro profissional <strong>CAU nº A51445-4</strong>, desenvolvendo soluções para clientes que precisam de um projeto claro, viável e tecnicamente consistente.</p>
+            <p>A atuação abrange projetos arquitetônicos, regularizações, topografia, retificações administrativas, projetos para o Corpo de Bombeiros e outras demandas técnicas com apresentação informatizada.</p>
+            <br>
+            <div class="profile-meta">
+              <div class="meta-item"><strong>Contato:</strong> (43) 99135-5140</div>
+              <div class="meta-item"><strong>Foco:</strong> clareza técnica, funcionalidade e valorização do imóvel</div>
+              <div class="meta-item"><strong>Especialidades:</strong> soluções arquitetônicas, documentais e técnicas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="panel">
+            <p style="margin-bottom:16px;">O objetivo é unir forma, função e valor em soluções coerentes e duradouras.</p>
+            <p>Cada projeto é conduzido para gerar mais segurança na tomada de decisão, melhor apresentação para o cliente e uma percepção mais forte de profissionalismo.</p>
+            <div class="tag-row">
+              <span class="tag">Projetos residenciais</span>
+              <span class="tag">Projetos comerciais</span>
+              <span class="tag">Projetos industriais</span>
+              <span class="tag">Obras públicas</span>
+              <span class="tag">Regularização de imóveis</span>
+              <span class="tag">Topografia</span>
+            </div>
+          </div>
+
+          <div class="about-list">
+            <div class="list-item">
+              <i>01</i>
+              <div>
+                <h3>Leitura estratégica</h3>
+                <p>Entendimento técnico do imóvel, do terreno e da necessidade real do cliente para orientar a solução certa.</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <i>02</i>
+              <div>
+                <h3>Estética com função</h3>
+                <p>O projeto precisa ser bonito, mas também funcional, coerente e seguro para execução e documentação.</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <i>03</i>
+              <div>
+                <h3>Processo mais claro</h3>
+                <p>Um atendimento técnico organizado reduz improvisos, melhora a comunicação e transmite mais confiança ao cliente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Serviços</div>
+          <h2>Soluções arquitetônicas e técnicas com apresentação profissional.</h2>
+          <p>Serviços de arquitetura e urbanismo pensados para resolver demandas com mais segurança, funcionalidade e valor.</p>
+        </div>
+
+        
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
+            <div class="index">01</div>
+            <h3>Projetos residenciais</h3>
+            <p>Projetos voltados a conforto, funcionalidade, aproveitamento do espaço e valorização do imóvel.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial e corporativo" /></div>
+            <div class="index">02</div>
+            <h3>Projetos comerciais</h3>
+            <p>Soluções para espaços que precisam unir identidade visual, fluxo e melhor experiência de uso.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Ambiente industrial técnico" /></div>
+            <div class="index">03</div>
+            <h3>Projetos industriais</h3>
+            <p>Estruturação técnica de demandas industriais com foco em organização, viabilidade e leitura funcional.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Documentação e projeto técnico" /></div>
+            <div class="index">04</div>
+            <h3>Obras públicas</h3>
+            <p>Atendimento a projetos para demandas públicas com clareza documental e base técnica consistente.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico para segurança e aprovação" /></div>
+            <div class="index">05</div>
+            <h3>Projetos para Corpo de Bombeiros</h3>
+            <p>Projetos técnicos voltados às exigências documentais para aprovação e adequação.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Consultoria técnica em arquitetura" /></div>
+            <div class="index">06</div>
+            <h3>Consultoria técnica</h3>
+            <p>Orientação para decisões mais seguras em imóveis, obras, viabilidade e documentação.</p>
+          </article>
+
+                    
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Projetos arquitetônicos e técnicos</div>
+          <h2>Portfólio de projetos</h2>
+          <p>A seção foi consolidada para funcionar melhor como vitrine profissional, com categorias claras e navegação estável.</p>
+        </div>
+
+        <div class="project-filters" id="projectFilters">
+          <button type="button" class="filter-btn active" data-category="residencial">Residencial</button>
+          <button type="button" class="filter-btn" data-category="comercial">Comercial</button>
+          <button type="button" class="filter-btn" data-category="industrial">Industrial</button>
+          <button type="button" class="filter-btn" data-category="regularizacao">Regularização</button>
+        </div>
+
+        <div class="project-category active" data-category-panel="residencial">
+          <div class="category-controls">
+            <div class="portfolio-meta" style="margin-bottom:0;"><span>Categoria</span><span>Residencial</span></div>
+            <div class="category-counter" data-counter="residencial">01 / 03</div>
+          </div>
+          <div class="slider-wrap category-carousel" data-carousel="residencial">
+            <div class="slider-nav" style="margin-top:0;">
+              <button class="slider-btn category-prev" type="button" data-target="residencial" aria-label="Anterior">←</button>
+              <button class="slider-btn category-next" type="button" data-target="residencial" aria-label="Próximo">→</button>
+            </div>
+            <div class="category-viewport">
+              <div class="category-track">
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Residencial</span><span>Projeto arquitetônico</span></div>
+                    <h3>Residência contemporânea com melhor aproveitamento do espaço</h3>
+                    <p>Projeto com foco em integração, iluminação natural e valorização estética do imóvel.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Casa contemporânea com área externa" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Residencial</span><span>Valorização do imóvel</span></div>
+                    <h3>Residência de alto padrão com integração externa</h3>
+                    <p>Solução voltada a amplitude visual, conforto e leitura arquitetônica mais sofisticada.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente social residencial moderno" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Residencial</span><span>Interiores</span></div>
+                    <h3>Ambiente social com organização e conforto</h3>
+                    <p>Projeto focado em funcionalidade, materialidade equilibrada e melhor experiência de uso.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-category" data-category-panel="comercial">
+          <div class="category-controls">
+            <div class="portfolio-meta" style="margin-bottom:0;"><span>Categoria</span><span>Comercial</span></div>
+            <div class="category-counter" data-counter="comercial">01 / 03</div>
+          </div>
+          <div class="slider-wrap category-carousel" data-carousel="comercial">
+            <div class="slider-nav" style="margin-top:0;">
+              <button class="slider-btn category-prev" type="button" data-target="comercial" aria-label="Anterior">←</button>
+              <button class="slider-btn category-next" type="button" data-target="comercial" aria-label="Próximo">→</button>
+            </div>
+            <div class="category-viewport">
+              <div class="category-track">
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial moderno" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Comercial</span><span>Layout</span></div>
+                    <h3>Espaço comercial com presença profissional</h3>
+                    <p>Ambiente pensado para fluxo, organização funcional e fortalecimento da imagem do negócio.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Ambiente comercial corporativo" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Comercial</span><span>Corporativo</span></div>
+                    <h3>Ambiente corporativo mais organizado e funcional</h3>
+                    <p>Projeto visual e técnico para melhorar circulação, percepção de qualidade e uso profissional.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Escritório comercial moderno" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Comercial</span><span>Apresentação</span></div>
+                    <h3>Projeto para escritório e atendimento</h3>
+                    <p>Solução com foco em imagem, produtividade e aproveitamento mais eficiente do espaço.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-category" data-category-panel="industrial">
+          <div class="category-controls">
+            <div class="portfolio-meta" style="margin-bottom:0;"><span>Categoria</span><span>Industrial</span></div>
+            <div class="category-counter" data-counter="industrial">01 / 03</div>
+          </div>
+          <div class="slider-wrap category-carousel" data-carousel="industrial">
+            <div class="slider-nav" style="margin-top:0;">
+              <button class="slider-btn category-prev" type="button" data-target="industrial" aria-label="Anterior">←</button>
+              <button class="slider-btn category-next" type="button" data-target="industrial" aria-label="Próximo">→</button>
+            </div>
+            <div class="category-viewport">
+              <div class="category-track">
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Estrutura industrial moderna" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Industrial</span><span>Projeto técnico</span></div>
+                    <h3>Organização espacial para ambiente industrial</h3>
+                    <p>Estudo técnico voltado à funcionalidade, circulação e leitura mais racional do espaço produtivo.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Galpão e estrutura industrial" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Industrial</span><span>Implantação</span></div>
+                    <h3>Leitura técnica para galpões e estruturas industriais</h3>
+                    <p>Solução focada em viabilidade, organização de setores e melhor aproveitamento do imóvel.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1581092921461-eab10380d70f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente industrial e técnico" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Industrial</span><span>Viabilidade</span></div>
+                    <h3>Projeto com foco em uso técnico e produtividade</h3>
+                    <p>Ambiente pensado para responder melhor às exigências de operação e infraestrutura.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-category" data-category-panel="regularizacao">
+          <div class="category-controls">
+            <div class="portfolio-meta" style="margin-bottom:0;"><span>Categoria</span><span>Regularização</span></div>
+            <div class="category-counter" data-counter="regularizacao">01 / 03</div>
+          </div>
+          <div class="slider-wrap category-carousel" data-carousel="regularizacao">
+            <div class="slider-nav" style="margin-top:0;">
+              <button class="slider-btn category-prev" type="button" data-target="regularizacao" aria-label="Anterior">←</button>
+              <button class="slider-btn category-next" type="button" data-target="regularizacao" aria-label="Próximo">→</button>
+            </div>
+            <div class="category-viewport">
+              <div class="category-track">
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Análise documental e regularização" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Regularização</span><span>Documentação</span></div>
+                    <h3>Organização documental para regularização de imóveis</h3>
+                    <p>Atendimento técnico voltado à clareza de documentos, adequações e maior segurança processual.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico documental" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Regularização</span><span>Retificação</span></div>
+                    <h3>Retificação administrativa e apoio técnico</h3>
+                    <p>Solução para demandas que exigem leitura documental, precisão e encaminhamento técnico organizado.</p>
+                  </div>
+                </article>
+                <article class="portfolio-card category-slide">
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Plantas, documentos e análise técnica" /></div>
+                  <div class="portfolio-content">
+                    <div class="portfolio-meta"><span>Regularização</span><span>Projeto técnico</span></div>
+                    <h3>Documentação e projeto para adequação</h3>
+                    <p>Estruturação técnica para apoiar legalização, atualização de dados e organização do imóvel.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Como funciona</div>
+          <h2>Um processo mais claro para transformar demanda em projeto com segurança.</h2>
+          <p>Esta etapa permanece no site, mas com texto mais direto e fácil para o cliente entender como o atendimento acontece.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card"><div class="index">01</div><h3>Briefing e entendimento</h3><p>Levantamento da necessidade, contexto do imóvel, objetivo do cliente e tipo de projeto.</p></article>
+          <article class="process-card"><div class="index">02</div><h3>Análise técnica</h3><p>Leitura do espaço, documentação, viabilidade e organização das decisões iniciais.</p></article>
+          <article class="process-card"><div class="index">03</div><h3>Desenvolvimento</h3><p>Construção da proposta com mais coerência técnica, visual e funcional.</p></article>
+          <article class="process-card"><div class="index">04</div><h3>Apresentação</h3><p>Entrega organizada, clara e preparada para facilitar entendimento e aprovação.</p></article>
+          <article class="process-card"><div class="index">05</div><h3>Ajustes e direcionamento</h3><p>Refinamento técnico e alinhamento do projeto conforme a necessidade real.</p></article>
+          <article class="process-card"><div class="index">06</div><h3>Encaminhamento técnico</h3><p>Suporte para documentação, regularização ou continuidade da demanda quando necessário.</p></article>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <div class="panel">
+          <div class="section-header" style="margin-bottom:24px;">
+            <div class="eyebrow">Contato</div>
+            <h2>Vamos conversar sobre o seu projeto?</h2>
+            <p>Se você busca atendimento profissional, mais clareza técnica e uma apresentação mais forte do seu projeto, este é o momento de iniciar a conversa.</p>
+          </div>
+
+          <div class="contact-list">
+            
+            <div class="contact-card"><h3>Contato</h3><p>(43) 99135-5140</p></div>
+            <div class="contact-card"><h3>Instagram</h3><p><i><a href="https://www.instagram.com/eversonmateuspereira" target="_blank" rel="noopener noreferrer">@eversonmateuspereira</i></a></p></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="eyebrow">Solicite um orçamento</div>
+          <form class="contact-form" id="contactForm">
+            <div class="field"><label for="nome">Nome</label><input type="text" id="nome" name="nome" placeholder="Seu nome completo" required /></div>
+            <div class="field"><label for="telefone">Telefone / WhatsApp</label><input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required /></div>
+            <div class="field"><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="voce@exemplo.com" required /></div>
+            <div class="field"><label for="mensagem">Fale sobre seu projeto</label><textarea id="mensagem" name="mensagem" placeholder="Ex.: projeto residencial, comercial, industrial, regularização, topografia ou consultoria"></textarea></div>
+            <button type="submit" class="btn btn-primary"><span>Enviar via WhatsApp</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand" aria-label="Everson Mateus, Arquiteto Urbanista">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
+      </a>
+      <div class="footer-copy">
+        <p>Everson Mateus Rodrigues Pereira • Arquiteto Urbanista • CAU nº A51445-4</p>
+        
+        <p>© 2026 • Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5543991355140?text=Olá,%20Everson!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.78 11.78 0 0 0 12.01 0C5.38 0 .01 5.37.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.17-1.61A11.94 11.94 0 0 0 12 24h.01c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.49-8.52zM12 21.8c-1.8 0-3.55-.48-5.08-1.38l-.36-.21-3.66.96.98-3.57-.23-.37A9.78 9.78 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2c2.62 0 5.08 1.02 6.93 2.87A9.75 9.75 0 0 1 21.8 12c0 5.4-4.4 9.8-9.8 9.8zm5.42-7.36c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.64.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.07-.15-.66-1.6-.9-2.2-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.52.08-.8.38-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.06 2.88 1.2 3.08.15.2 2.08 3.18 5.05 4.45.7.3 1.25.48 1.68.61.7.22 1.33.19 1.83.12.56-.08 1.76-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.19-.57-.34z"></path>
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const MOBILE_BREAKPOINT = 932;
+
+    function closeMobileMenu() {
+      navLinks.classList.remove('show');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    function toggleMobileMenu() {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        const isOpen = navLinks.classList.toggle('show');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+      }
+    }
+
+    function syncMobileMenu() {
+      if (window.innerWidth > MOBILE_BREAKPOINT) {
+        navLinks.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+    menuToggle?.addEventListener('click', (event) => {
+      event.stopPropagation();
+      toggleMobileMenu();
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (window.innerWidth <= MOBILE_BREAKPOINT && !navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    window.addEventListener('resize', syncMobileMenu);
+    syncMobileMenu();
+
+    function applyTheme(theme) {
+      const isLight = theme === 'light';
+      body.classList.toggle('light', isLight);
+      localStorage.setItem('everson-theme', isLight ? 'light' : 'dark');
+      themeToggle?.setAttribute('aria-label', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+    }
+
+    applyTheme(localStorage.getItem('everson-theme') === 'light' ? 'light' : 'dark');
+
+    themeToggle?.addEventListener('click', () => {
+      applyTheme(body.classList.contains('light') ? 'dark' : 'light');
+    });
+
+    const form = document.getElementById('contactForm');
+    form?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome')?.value.trim() || '';
+      const telefone = document.getElementById('telefone')?.value.trim() || '';
+      const email = document.getElementById('email')?.value.trim() || '';
+      const mensagem = document.getElementById('mensagem')?.value.trim() || '';
+      const texto = `Olá, Everson! Meu nome é ${nome}.%0A%0ATelefone/WhatsApp: ${telefone}%0AE-mail: ${email}%0A%0ASobre meu projeto:%0A${mensagem || 'Gostaria de solicitar um orçamento.'}`;
+      window.open(`https://wa.me/5543991355140?text=${texto}`, '_blank');
+    });
+
+    function initProjectCategories() {
+      const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+      const categoryPanels = Array.from(document.querySelectorAll('.project-category'));
+      const sliders = {};
+
+      function updateSlider(category, animate = true) {
+        const slider = sliders[category];
+        if (!slider) return;
+        slider.track.style.transition = animate ? 'transform 700ms cubic-bezier(.22,1,.36,1)' : 'none';
+        slider.track.style.transform = `translateX(-${slider.index * 100}%)`;
+        if (slider.counter) {
+          const current = String(slider.index + 1).padStart(2, '0');
+          const total = String(slider.slides.length).padStart(2, '0');
+          slider.counter.textContent = `${current} / ${total}`;
+        }
+      }
+
+      function nextSlide(category) {
+        const slider = sliders[category];
+        if (!slider || slider.slides.length <= 1) return;
+        slider.index = (slider.index + 1) % slider.slides.length;
+        updateSlider(category);
+      }
+
+      function prevSlide(category) {
+        const slider = sliders[category];
+        if (!slider || slider.slides.length <= 1) return;
+        slider.index = (slider.index - 1 + slider.slides.length) % slider.slides.length;
+        updateSlider(category);
+      }
+
+      function startAutoplay(category) {
+        const slider = sliders[category];
+        if (!slider || slider.slides.length <= 1) return;
+        clearInterval(slider.timer);
+        slider.timer = setInterval(() => nextSlide(category), 4200);
+      }
+
+      function stopAutoplay(category) {
+        const slider = sliders[category];
+        if (!slider) return;
+        clearInterval(slider.timer);
+      }
+
+      document.querySelectorAll('.category-carousel').forEach((wrap) => {
+        const category = wrap.dataset.carousel;
+        const track = wrap.querySelector('.category-track');
+        const slides = Array.from(wrap.querySelectorAll('.category-slide'));
+        const prev = wrap.querySelector('.category-prev');
+        const next = wrap.querySelector('.category-next');
+        const counter = document.querySelector(`[data-counter="${category}"]`);
+        sliders[category] = { wrap, track, slides, prev, next, counter, index: 0, timer: null };
+
+        prev?.addEventListener('click', () => {
+          prevSlide(category);
+          startAutoplay(category);
+        });
+        next?.addEventListener('click', () => {
+          nextSlide(category);
+          startAutoplay(category);
+        });
+
+        wrap.addEventListener('mouseenter', () => stopAutoplay(category));
+        wrap.addEventListener('mouseleave', () => {
+          const panel = wrap.closest('.project-category');
+          if (panel?.classList.contains('active')) startAutoplay(category);
+        });
+
+        updateSlider(category, false);
+      });
+
+      function activateProjectCategory(category) {
+        filterButtons.forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.category === category);
+        });
+
+        categoryPanels.forEach((panel) => {
+          const panelCategory = panel.dataset.categoryPanel;
+          const isActive = panelCategory === category;
+          panel.classList.toggle('active', isActive);
+          panel.style.display = isActive ? 'block' : 'none';
+
+          if (sliders[panelCategory]) {
+            if (isActive) {
+              updateSlider(panelCategory, false);
+              startAutoplay(panelCategory);
+            } else {
+              stopAutoplay(panelCategory);
+            }
+          }
+        });
+      }
+
+      if (filterButtons.length && categoryPanels.length) {
+        filterButtons.forEach((button) => {
+          button.addEventListener('click', () => activateProjectCategory(button.dataset.category));
+        });
+        const initialButton = document.querySelector('.filter-btn.active') || filterButtons[0];
+        activateProjectCategory(initialButton.dataset.category);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initProjectCategories);
+    } else {
+      initProjectCategories();
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    if (window.gsap) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from('.hero-copy > *', {
+        y: 22,
+        opacity: 0,
+        duration: 0.75,
+        stagger: 0.06,
+        ease: 'power2.out'
+      });
+
+      gsap.from('.hero-card', {
+        y: 26,
+        opacity: 0,
+        duration: 0.82,
+        ease: 'power2.out'
+      });
+
+      gsap.utils.toArray('.service-card, .process-card, .testimonial, .list-item, .portfolio-card, .contact-card, .proof-card, .faq-item, .cta-box, .panel, .profile-card').forEach(item => {
+        gsap.from(item, {
+          scrollTrigger: { trigger: item, start: 'top 88%' },
+          y: 18,
+          opacity: 0,
+          duration: 0.62,
+          ease: 'power2.out'
+        });
+      });
+
+      gsap.to('#heroImage', {
+        yPercent: 8,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    }
+
+    const sections = document.querySelectorAll('main section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = 'inicio';
+      sections.forEach(section => {
+        const top = section.offsetTop - 140;
+        if (window.scrollY >= top) current = section.getAttribute('id');
+      });
+
+      navAnchors.forEach(anchor => {
+        anchor.classList.toggle('active', anchor.getAttribute('href') === `#${current}`);
+      });
+    });
+  </script>
+</body>
+</html>
