@@ -77,11 +77,11 @@
     .container{
       width:min(100%,var(--container));
       margin:0 auto;
-      padding-left:16px;
-      padding-right:16px;
+      padding-left:24px;
+      padding-right:24px;
     }
 
-    .section{padding:96px 0}
+    .section{padding:88px 0}
     .eyebrow{
       display:inline-flex;align-items:center;gap:10px;
       padding:8px 14px;border:1px solid var(--line);border-radius:999px;
@@ -93,7 +93,7 @@
       clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
     }
 
-    .section-header{max-width:860px;margin-bottom:38px}
+    .section-header{max-width:860px;margin-bottom:32px}
     .section-header h2{
       font-family:'Playfair Display',serif;
       font-size:clamp(2.1rem,4vw,4rem);
@@ -136,7 +136,7 @@
     }
     .brand{display:inline-flex;align-items:center;line-height:1;flex-shrink:0}
     .brand-logo{
-      display:block;width:clamp(180px,22vw,280px);height:auto;object-fit:contain;
+      display:block;width:clamp(180px,22vw,280px);height:auto;object-fit:contain;    margin: 0px -6px;
       filter:drop-shadow(0 8px 18px rgba(0,0,0,.22));
     }
 
@@ -154,7 +154,7 @@
     .nav-links a:hover,.nav-links a.active{color:#fff}
     .nav-links a:hover::after,.nav-links a.active::after{width:100%}
 
-    .nav-actions{display:flex;align-items:center;gap:12px}
+    .nav-actions{display:flex;align-items:center;gap:12px;margin: 0px 18px;}
     .theme-toggle,.menu-toggle{
       width:50px;height:50px;border:1px solid rgba(255,255,255,.16);
       background:transparent;color:#eef2f5;display:inline-flex;
@@ -162,7 +162,7 @@
       transition:transform var(--transition),background var(--transition);
     }
     .theme-toggle:hover,.menu-toggle:hover{transform:translateY(-2px);background:rgba(255,255,255,.04)}
-    .desktop-cta{display:inline-flex}
+    .desktop-cta{display:inline-flex;margin: 0px 6px}
     .menu-toggle{display:none}
 
     .theme-toggle{position:relative;overflow:hidden}
@@ -206,7 +206,7 @@
     }
     .hero-copy h1{
       font-family:'Playfair Display',serif;
-      font-size:clamp(3rem,6vw,6rem);
+      font-size:clamp(3rem,6vw,5rem);
       line-height:.88;letter-spacing:-.07em;margin-bottom:20px;text-transform:uppercase;
       max-width:760px;
     }
@@ -270,7 +270,7 @@
       height:180px;
       overflow:hidden;
       border-bottom:1px solid var(--line);
-      margin:-24px -24px 18px -24px;
+      margin:-28px -28px 20px -28px;
       background:var(--surface-3);
     }
     .service-media img{
@@ -297,7 +297,7 @@
 
     .profile-photo{overflow:hidden}
     .profile-photo img{width:100%;height:100%;min-height:460px;object-fit:cover;filter:saturate(.88) contrast(1.04) brightness(.92)}
-    .profile-card,.panel,.proof-card,.service-card,.process-card,.testimonial,.contact-card,.faq-item{padding:24px}
+    .profile-card,.panel,.proof-card,.service-card,.process-card,.testimonial,.contact-card,.faq-item{padding:28px}
     .profile-card .role{
       color:var(--accent);font-size:.82rem;text-transform:uppercase;letter-spacing:.18em;margin-bottom:16px;display:block;
     }
@@ -464,7 +464,15 @@
     }
     .whatsapp-float svg{width:32px;height:32px;fill:currentColor}
 
-    @media (max-width:1080px){
+    
+    @media (max-width: 1200px){
+      .container{
+        padding-left:22px;
+        padding-right:22px;
+      }
+    }
+
+@media (max-width:1080px){
       .hero-grid,.proof-grid,.services-grid,.process-grid,.testimonials-grid,.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .about-grid,.contact-grid{grid-template-columns:1fr}
       .hero-metrics{grid-template-columns:1fr}
@@ -479,25 +487,47 @@
     @media (max-width:932px){
       .menu-toggle{display:inline-flex}
       .desktop-cta{display:none}
-      .nav{min-height:76px;padding:12px 0}
-      .brand-logo{width:clamp(150px,34vw,210px)}
+      .nav{
+        min-height:84px;
+        padding:16px 0;
+        gap:16px;
+      }
+      .brand-logo{width:clamp(156px,34vw,214px)}
       .nav-links{
-        position:absolute;top:calc(100% + 8px);left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:10px;
-        margin:0;padding:18px;background:rgba(9,10,12,.98);border:1px solid rgba(255,255,255,.10);
-        box-shadow:0 18px 40px rgba(0,0,0,.28);z-index:80;
+        position:absolute;
+        top:calc(100% + 14px);
+        left:12px;
+        right:12px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:12px;
+        margin:0;
+        padding:18px;
+        background:rgba(9,10,12,.98);
+        border:1px solid rgba(255,255,255,.10);
+        box-shadow:0 18px 40px rgba(0,0,0,.28);
+        z-index:80;
       }
       body.light .nav-links{background:rgba(9,10,12,.98)}
       .nav-links.show{display:flex}
       .nav-links a,body.light .nav-links a{
-        color:#eef2f5;width:100%;padding:14px 12px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);
+        color:#eef2f5;
+        width:100%;
+        padding:15px 16px;
+        border:1px solid rgba(255,255,255,.06);
+        background:rgba(255,255,255,.02);
       }
       .nav-links a::after{display:none}
       .nav-links a:hover,.nav-links a:focus-visible,body.light .nav-links a:hover,body.light .nav-links a:focus-visible{
-        background:rgba(181,155,115,.14);border-color:rgba(181,155,115,.34);color:#fff;transform:translateX(4px);
+        background:rgba(181,155,115,.14);
+        border-color:rgba(181,155,115,.34);
+        color:#fff;
+        transform:translateX(4px);
       }
 
-      .section{padding:74px 0}
-      .hero{padding:30px 0 74px}
+      .section{padding:72px 0}
+      .hero{padding:28px 0 72px}
       .hero-grid,.proof-grid,.services-grid,.process-grid,.testimonials-grid,.faq-grid,.about-profile{grid-template-columns:1fr}
       .hero-copy h1{font-size:clamp(2.7rem,12vw,4.6rem)}
       .hero-card img{min-height:420px}
@@ -506,8 +536,47 @@
       .footer-inner{justify-content:center;text-align:center}
     }
 
-    @media (max-width:520px){
-      .container{padding-left:12px;padding-right:12px}
+    
+    @media (max-width: 932px) and (orientation: landscape){
+      .container{
+        padding-left:20px;
+        padding-right:20px;
+      }
+      .nav{
+        min-height:76px;
+        padding:12px 0;
+      }
+      .nav-links{
+        left:20px;
+        right:20px;
+        top:calc(100% + 12px);
+        padding:16px;
+      }
+    }
+
+@media (max-width:520px){
+      .container{padding-left:16px;padding-right:16px}
+      .hero-copy,.panel,.service-card,.process-card,.testimonial,.contact-card,.proof-card,.faq-item,.cta-box,.portfolio-content,.slider-wrap,.profile-card{padding:20px}
+      .service-media{margin:-20px -20px 18px -20px}
+      .hero-actions .btn{width:100%}
+      .portfolio-thumb{aspect-ratio:4 / 3}
+      .nav{
+        min-height:78px;
+        padding:14px 0;
+      }
+      .nav-links{
+        left:8px;
+        right:8px;
+        top:calc(100% + 10px);
+        padding:14px;
+        gap:10px;
+      }
+      .nav-links a,body.light .nav-links a{
+        padding:14px 14px;
+      }
+      .whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}
+      .footer-copy strong,.footer-copy span,.footer-copy p{font-size:.68rem}
+    }
       .hero-copy,.panel,.service-card,.process-card,.testimonial,.contact-card,.proof-card,.faq-item,.cta-box,.portfolio-content,.slider-wrap,.profile-card{padding:20px}
       .hero-actions .btn{width:100%}
       .portfolio-thumb{aspect-ratio:4 / 3}
@@ -569,7 +638,7 @@
 
         <div class="hero-card">
           <div class="hero-axes" aria-hidden="true"></div>
-          <img id="heroImage" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80" alt="Projeto arquitetônico contemporâneo de alto padrão" />
+          <img id="heroImage" src="assets/hero.jpg" alt="Projeto arquitetônico contemporâneo de alto padrão" />
           <div class="floating-note">
             <strong>Atendimento profissional</strong>
             <p>Projetos com leitura técnica, apresentação clara e foco em valorização do espaço.</p>
@@ -656,7 +725,7 @@
         
         <div class="services-grid">
           <article class="service-card">
-            <div class="service-media"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
+            <div class="service-media"><img src="assets/residencial_01.jpg" alt="Projeto residencial contemporâneo" /></div>
             <div class="index">01</div>
             <h3>Projetos residenciais</h3>
             <p>Projetos voltados a conforto, funcionalidade, aproveitamento do espaço e valorização do imóvel.</p>
@@ -732,7 +801,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Residencial</span><span>Projeto arquitetônico</span></div>
+                    <div class="portfolio-meta"><span>Projeto arquitetônico</span></div>
                     <h3>Residência contemporânea com melhor aproveitamento do espaço</h3>
                     <p>Projeto com foco em integração, iluminação natural e valorização estética do imóvel.</p>
                   </div>
@@ -740,7 +809,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Casa contemporânea com área externa" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Residencial</span><span>Valorização do imóvel</span></div>
+                    <div class="portfolio-meta"><span>Valorização do imóvel</span></div>
                     <h3>Residência de alto padrão com integração externa</h3>
                     <p>Solução voltada a amplitude visual, conforto e leitura arquitetônica mais sofisticada.</p>
                   </div>
@@ -748,7 +817,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente social residencial moderno" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Residencial</span><span>Interiores</span></div>
+                    <div class="portfolio-meta"><span>Interiores</span></div>
                     <h3>Ambiente social com organização e conforto</h3>
                     <p>Projeto focado em funcionalidade, materialidade equilibrada e melhor experiência de uso.</p>
                   </div>
@@ -773,7 +842,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial moderno" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Comercial</span><span>Layout</span></div>
+                    <div class="portfolio-meta"><span>Layout</span></div>
                     <h3>Espaço comercial com presença profissional</h3>
                     <p>Ambiente pensado para fluxo, organização funcional e fortalecimento da imagem do negócio.</p>
                   </div>
@@ -781,7 +850,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Ambiente comercial corporativo" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Comercial</span><span>Corporativo</span></div>
+                    <div class="portfolio-meta"><span>Corporativo</span></div>
                     <h3>Ambiente corporativo mais organizado e funcional</h3>
                     <p>Projeto visual e técnico para melhorar circulação, percepção de qualidade e uso profissional.</p>
                   </div>
@@ -789,7 +858,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Escritório comercial moderno" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Comercial</span><span>Apresentação</span></div>
+                    <div class="portfolio-meta"><span>Cowork</span></div>
                     <h3>Projeto para escritório e atendimento</h3>
                     <p>Solução com foco em imagem, produtividade e aproveitamento mais eficiente do espaço.</p>
                   </div>
@@ -814,7 +883,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Estrutura industrial moderna" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Industrial</span><span>Projeto técnico</span></div>
+                    <div class="portfolio-meta"><span>Projeto técnico</span></div>
                     <h3>Organização espacial para ambiente industrial</h3>
                     <p>Estudo técnico voltado à funcionalidade, circulação e leitura mais racional do espaço produtivo.</p>
                   </div>
@@ -822,7 +891,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Galpão e estrutura industrial" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Industrial</span><span>Implantação</span></div>
+                    <div class="portfolio-meta"><span>Implantação</span></div>
                     <h3>Leitura técnica para galpões e estruturas industriais</h3>
                     <p>Solução focada em viabilidade, organização de setores e melhor aproveitamento do imóvel.</p>
                   </div>
@@ -830,7 +899,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ambiente industrial e técnico" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Industrial</span><span>Viabilidade</span></div>
+                    <div class="portfolio-meta"><span>Viabilidade</span></div>
                     <h3>Projeto com foco em uso técnico e produtividade</h3>
                     <p>Ambiente pensado para responder melhor às exigências de operação e infraestrutura.</p>
                   </div>
@@ -855,7 +924,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Análise documental e regularização" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Regularização</span><span>Documentação</span></div>
+                    <div class="portfolio-meta"><span>Documentação</span></div>
                     <h3>Organização documental para regularização de imóveis</h3>
                     <p>Atendimento técnico voltado à clareza de documentos, adequações e maior segurança processual.</p>
                   </div>
@@ -863,7 +932,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico documental" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Regularização</span><span>Retificação</span></div>
+                    <div class="portfolio-meta"><span>Regularização</span>></div>
                     <h3>Retificação administrativa e apoio técnico</h3>
                     <p>Solução para demandas que exigem leitura documental, precisão e encaminhamento técnico organizado.</p>
                   </div>
@@ -871,7 +940,7 @@
                 <article class="portfolio-card category-slide">
                   <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Plantas, documentos e análise técnica" /></div>
                   <div class="portfolio-content">
-                    <div class="portfolio-meta"><span>Regularização</span><span>Projeto técnico</span></div>
+                    <div class="portfolio-meta"><span>Projeto técnico</span></div>
                     <h3>Documentação e projeto para adequação</h3>
                     <p>Estruturação técnica para apoiar legalização, atualização de dados e organização do imóvel.</p>
                   </div>
@@ -915,8 +984,10 @@
 
           <div class="contact-list">
             
-            <div class="contact-card"><h3>Contato</h3><p>(43) 99135-5140</p></div>
-            <div class="contact-card"><h3>Instagram</h3><p><i><a href="https://www.instagram.com/eversonmateuspereira" target="_blank" rel="noopener noreferrer">@eversonmateuspereira</i></a></p></div>
+            <div class="contact-card"><h3><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>  Contato</h3><p>(43) 99135-5140</p></div>
+            <div class="contact-card"><a href="https://www.instagram.com/eversonmateuspereira" target="_blank" rel="noopener noreferrer"><h3><svg width="45" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.9a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg> Instagram</h3></a><p><i>@eversonmateuspereira</i></a></p></div>
           </div>
         </div>
 
