@@ -6,16 +6,16 @@
   <title>Everson Mateus | Arquiteto Urbanista</title>
   <meta name="description" content="Everson Mateus Rodrigues Pereira, Arquiteto Urbanista. Projetos residenciais, comerciais, industriais, obras públicas, regularização de imóveis, topografia, projetos para o Corpo de Bombeiros e arquitetura informatizada." />
   <meta name="theme-color" content="#0b0d10" />
-  <meta http-equiv="x-dns-prefetch-control" content="on" />
   <link rel="icon" type="image/svg+xml" href="assets/icon.png" />
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="main.js?attr=..." charset="UTF-8"></script>    
+    <script type="text/javascript" src="main.js?attr=..." charset="UTF-8"></script>    
+
+  
   <style>
-  :root{
+    
+    :root{
       --bg:#090a0c;
       --bg-2:#0d1014;
       --surface:#101318;
@@ -26,7 +26,7 @@
       --line:rgba(255,255,255,.08);
       --line-strong:rgba(255,255,255,.16);
       --accent:#b59b73;
-      --shadow:0 14px 34px rgba(0,0,0,.22);
+      --shadow:0 24px 70px rgba(0,0,0,.36);
       --container:1280px;
       --transition:220ms ease;
       --header-h:96px;
@@ -50,7 +50,7 @@
     *::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;overflow-x:hidden}
     body{
-      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+      font-family:'Inter',sans-serif;
       background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);
       color:var(--text);
       line-height:1.6;
@@ -60,7 +60,7 @@
     }
 
     .site-noise{
-      position:fixed;inset:0;pointer-events:none;opacity:.03;z-index:1;
+      position:fixed;inset:0;pointer-events:none;opacity:.06;z-index:1;
       background-image:
         radial-gradient(circle at 20% 20%, rgba(255,255,255,.45) .6px, transparent .7px),
         radial-gradient(circle at 80% 50%, rgba(255,255,255,.25) .5px, transparent .6px),
@@ -78,30 +78,10 @@
       width:min(100%,var(--container));
       margin:0 auto;
       padding-left:16px;
-      padding-right:0px;
+      padding-right:16px;
     }
 
     .section{padding:96px 0}
-
-    .section{
-      content-visibility:auto;
-      contain-intrinsic-size: 1px 900px;
-    }
-
-    .hero{
-      content-visibility:visible;
-      contain-intrinsic-size:auto;
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      *,
-      *::before,
-      *::after{
-        animation:none !important;
-        transition:none !important;
-        scroll-behavior:auto !important;
-      }
-    }
     .eyebrow{
       display:inline-flex;align-items:center;gap:10px;
       padding:8px 14px;border:1px solid var(--line);border-radius:999px;
@@ -138,10 +118,10 @@
     .site-header{
       position:fixed;top:0;left:0;width:100%;z-index:100;
       background:rgba(9,10,12,.62);
-      backdrop-filter:blur(12px) saturate(120%);
-      -webkit-backdrop-filter:blur(12px) saturate(120%);
+      backdrop-filter:blur(18px) saturate(140%);
+      -webkit-backdrop-filter:blur(18px) saturate(140%);
       border-bottom:1px solid rgba(255,255,255,.10);
-      box-shadow:0 8px 20px rgba(0,0,0,.12);
+      box-shadow:0 10px 30px rgba(0,0,0,.18);
     }
     body.light .site-header{
       background:rgba(9,10,12,.62);
@@ -226,8 +206,8 @@
     }
     .hero-copy h1{
       font-family:'Playfair Display',serif;
-      font-size:clamp(3rem,6vw,5.5rem);
-      line-height:.80;letter-spacing:-.07em;margin-bottom:20px;text-transform:uppercase;
+      font-size:clamp(3rem,6vw,6rem);
+      line-height:.88;letter-spacing:-.07em;margin-bottom:20px;text-transform:uppercase;
       max-width:760px;
     }
     .hero-copy p{color:var(--muted);max-width:640px;font-size:1rem;margin-bottom:28px}
@@ -250,8 +230,8 @@
     .hero-card{min-height:100%;overflow:hidden;background:#121416;isolation:isolate}
     .hero-card img{
       width:100%;height:100%;min-height:680px;object-fit:cover;
-      filter:saturate(.86) contrast(1.02) brightness(.9);
-      transform:scale(1.03);transition:transform 700ms ease;
+      filter:saturate(.78) contrast(1.08) brightness(.82) grayscale(.08);
+      transform:scale(1.03);transition:transform 1200ms ease;
     }
     .hero-card:hover img{transform:scale(1.06)}
     .hero-card .hero-axes{
@@ -298,7 +278,7 @@
       height:100%;
       object-fit:cover;
       filter:saturate(.88) contrast(1.02) brightness(.88);
-      transition:transform 500ms ease, filter 220ms ease;
+      transition:transform 900ms ease, filter 300ms ease;
     }
     .service-card:hover .service-media img{
       transform:scale(1.04);
@@ -316,7 +296,7 @@
     }
 
     .profile-photo{overflow:hidden}
-    .profile-photo img{width:100%;height:100%;min-height:460px;object-fit:cover;filter:saturate(.92) contrast(1.01) brightness(.94)}
+    .profile-photo img{width:100%;height:100%;min-height:460px;object-fit:cover;filter:saturate(.88) contrast(1.04) brightness(.92)}
     .profile-card,.panel,.proof-card,.service-card,.process-card,.testimonial,.contact-card,.faq-item{padding:24px}
     .profile-card .role{
       color:var(--accent);font-size:.82rem;text-transform:uppercase;letter-spacing:.18em;margin-bottom:16px;display:block;
@@ -408,7 +388,7 @@
     .category-track{
       display:flex;
       width:100%;
-      transition:transform 520ms ease;
+      transition:transform 700ms cubic-bezier(.22,1,.36,1);
       will-change:transform;
     }
     .category-slide{
@@ -430,8 +410,8 @@
     }
     .portfolio-thumb img{
       width:100%;height:100%;object-fit:cover;
-      transition:transform 650ms ease,filter 250ms ease;
-      filter:saturate(.9) contrast(1.01) brightness(.94);transform:scale(1.01);
+      transition:transform 1200ms cubic-bezier(.22,1,.36,1),filter 700ms ease;
+      filter:saturate(.84) contrast(1.04) brightness(.9);transform:scale(1.01);
     }
     .portfolio-card:hover .portfolio-thumb img{transform:scale(1.045)}
     .portfolio-content{padding:24px 26px 26px}
@@ -462,7 +442,7 @@
     .cta-box p{max-width:740px;color:var(--muted);margin-bottom:24px}
 
     .site-footer{
-      border-top:1px solid rgba(255,255,255,.08);padding:0px 0;background:rgba(9,10,12,.88)
+      border-top:1px solid rgba(255,255,255,.08);padding:28px 0;background:rgba(9,10,12,.88)
     }
     body.light .site-footer{background:rgba(9,10,12,.88);border-top-color:rgba(255,255,255,.08)}
     .footer-inner{
@@ -532,7 +512,7 @@
       .hero-actions .btn{width:100%}
       .portfolio-thumb{aspect-ratio:4 / 3}
       .whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}
-      .footer-copy strong,.footer-copy span,.footer-copy p{font-size:.5rem}
+      .footer-copy strong,.footer-copy span,.footer-copy p{font-size:.68rem}
     }
   </style>
 </head>
@@ -542,7 +522,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="#inicio" class="brand" aria-label="Everson Mateus, Arquiteto Urbanista">
-        <img loading="lazy" decoding="async" class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Menu principal">
@@ -589,7 +569,7 @@
 
         <div class="hero-card">
           <div class="hero-axes" aria-hidden="true"></div>
-          <img fetchpriority="high" decoding="async" id="heroImage" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80" alt="Projeto arquitetônico contemporâneo de alto padrão" />
+          <img id="heroImage" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80" alt="Projeto arquitetônico contemporâneo de alto padrão" />
           <div class="floating-note">
             <strong>Atendimento profissional</strong>
             <p>Projetos com leitura técnica, apresentação clara e foco em valorização do espaço.</p>
@@ -608,7 +588,7 @@
 
         <div class="about-profile">
           <div class="profile-photo">
-            <img loading="lazy" decoding="async" src="assets/Everson.jpg" alt="Imagem representativa de profissional de arquitetura em obra" />
+            <img src="assets/Everson.jpg" alt="Imagem representativa de profissional de arquitetura em obra" />
           </div>
 
           <div class="profile-card">
@@ -676,42 +656,42 @@
         
         <div class="services-grid">
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
             <div class="index">01</div>
             <h3>Projetos residenciais</h3>
             <p>Projetos voltados a conforto, funcionalidade, aproveitamento do espaço e valorização do imóvel.</p>
           </article>
 
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial e corporativo" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial e corporativo" /></div>
             <div class="index">02</div>
             <h3>Projetos comerciais</h3>
             <p>Soluções para espaços que precisam unir identidade visual, fluxo e melhor experiência de uso.</p>
           </article>
 
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Ambiente industrial técnico" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Ambiente industrial técnico" /></div>
             <div class="index">03</div>
             <h3>Projetos industriais</h3>
             <p>Estruturação técnica de demandas industriais com foco em organização, viabilidade e leitura funcional.</p>
           </article>
 
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Documentação e projeto técnico" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Documentação e projeto técnico" /></div>
             <div class="index">04</div>
             <h3>Obras públicas</h3>
             <p>Atendimento a projetos para demandas públicas com clareza documental e base técnica consistente.</p>
           </article>
 
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico para segurança e aprovação" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Projeto técnico para segurança e aprovação" /></div>
             <div class="index">05</div>
             <h3>Projetos para Corpo de Bombeiros</h3>
             <p>Projetos técnicos voltados às exigências documentais para aprovação e adequação.</p>
           </article>
 
           <article class="service-card">
-            <div class="service-media"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Consultoria técnica em arquitetura" /></div>
+            <div class="service-media"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Consultoria técnica em arquitetura" /></div>
             <div class="index">06</div>
             <h3>Consultoria técnica</h3>
             <p>Orientação para decisões mais seguras em imóveis, obras, viabilidade e documentação.</p>
@@ -734,7 +714,7 @@
           <button type="button" class="filter-btn active" data-category="residencial">Residencial</button>
           <button type="button" class="filter-btn" data-category="comercial">Comercial</button>
           <button type="button" class="filter-btn" data-category="industrial">Industrial</button>
-          <button type="button" class="filter-btn" data-category="regularizacao">Regularização</button>
+          <button type="button" class="filter-btn" data-category="regularizacao">Regularização de Documentos</button>
         </div>
 
         <div class="project-category active" data-category-panel="residencial">
@@ -750,7 +730,7 @@
             <div class="category-viewport">
               <div class="category-track">
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Projeto residencial contemporâneo" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Residencial</span><span>Projeto arquitetônico</span></div>
                     <h3>Residência contemporânea com melhor aproveitamento do espaço</h3>
@@ -758,7 +738,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Casa contemporânea com área externa" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Casa contemporânea com área externa" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Residencial</span><span>Valorização do imóvel</span></div>
                     <h3>Residência de alto padrão com integração externa</h3>
@@ -766,7 +746,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente social residencial moderno" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente social residencial moderno" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Residencial</span><span>Interiores</span></div>
                     <h3>Ambiente social com organização e conforto</h3>
@@ -791,7 +771,7 @@
             <div class="category-viewport">
               <div class="category-track">
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial moderno" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="Projeto comercial moderno" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Comercial</span><span>Layout</span></div>
                     <h3>Espaço comercial com presença profissional</h3>
@@ -799,7 +779,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Ambiente comercial corporativo" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Ambiente comercial corporativo" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Comercial</span><span>Corporativo</span></div>
                     <h3>Ambiente corporativo mais organizado e funcional</h3>
@@ -807,7 +787,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Escritório comercial moderno" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=1200&q=80" alt="Escritório comercial moderno" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Comercial</span><span>Apresentação</span></div>
                     <h3>Projeto para escritório e atendimento</h3>
@@ -832,7 +812,7 @@
             <div class="category-viewport">
               <div class="category-track">
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Estrutura industrial moderna" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Estrutura industrial moderna" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Industrial</span><span>Projeto técnico</span></div>
                     <h3>Organização espacial para ambiente industrial</h3>
@@ -840,7 +820,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Galpão e estrutura industrial" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80" alt="Galpão e estrutura industrial" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Industrial</span><span>Implantação</span></div>
                     <h3>Leitura técnica para galpões e estruturas industriais</h3>
@@ -848,7 +828,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1581092921461-eab10380d70f?auto=format&fit=crop&w=1200&q=80" alt="Ambiente industrial e técnico" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1542274368-443d694d79aa?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ambiente industrial e técnico" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Industrial</span><span>Viabilidade</span></div>
                     <h3>Projeto com foco em uso técnico e produtividade</h3>
@@ -873,7 +853,7 @@
             <div class="category-viewport">
               <div class="category-track">
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Análise documental e regularização" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Análise documental e regularização" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Regularização</span><span>Documentação</span></div>
                     <h3>Organização documental para regularização de imóveis</h3>
@@ -881,7 +861,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico documental" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Projeto técnico documental" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Regularização</span><span>Retificação</span></div>
                     <h3>Retificação administrativa e apoio técnico</h3>
@@ -889,7 +869,7 @@
                   </div>
                 </article>
                 <article class="portfolio-card category-slide">
-                  <div class="portfolio-thumb"><img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Plantas, documentos e análise técnica" /></div>
+                  <div class="portfolio-thumb"><img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Plantas, documentos e análise técnica" /></div>
                   <div class="portfolio-content">
                     <div class="portfolio-meta"><span>Regularização</span><span>Projeto técnico</span></div>
                     <h3>Documentação e projeto para adequação</h3>
@@ -936,7 +916,7 @@
           <div class="contact-list">
             
             <div class="contact-card"><h3>Contato</h3><p>(43) 99135-5140</p></div>
-            <div class="contact-card"><h3>Instagram</h3><p><a href="https://www.instagram.com/eversonmateuspereira" target="_blank" rel="noopener noreferrer">@eversonmateuspereira</a></p></div>
+            <div class="contact-card"><h3>Instagram</h3><p><i><a href="https://www.instagram.com/eversonmateuspereira" target="_blank" rel="noopener noreferrer">@eversonmateuspereira</i></a></p></div>
           </div>
         </div>
 
@@ -959,7 +939,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="#inicio" class="brand" aria-label="Everson Mateus, Arquiteto Urbanista">
-        <img loading="lazy" decoding="async" class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Everson Mateus" />
       </a>
       <div class="footer-copy">
         <p>Everson Mateus Rodrigues Pereira • Arquiteto Urbanista • CAU nº A51445-4</p>
@@ -975,8 +955,8 @@
     </svg>
   </a>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
@@ -1162,50 +1142,45 @@
       });
     });
 
-    window.addEventListener('load', () => {
-      if (!window.gsap) return;
-
+    if (window.gsap) {
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.from('.hero-copy > *', {
-        y: 18,
+        y: 22,
         opacity: 0,
-        duration: 0.6,
-        stagger: 0.05,
+        duration: 0.75,
+        stagger: 0.06,
         ease: 'power2.out'
       });
 
       gsap.from('.hero-card', {
-        y: 20,
+        y: 26,
         opacity: 0,
-        duration: 0.65,
+        duration: 0.82,
         ease: 'power2.out'
       });
 
-      gsap.utils.toArray('.service-card, .process-card, .testimonial, .list-item, .portfolio-card, .contact-card, .panel, .profile-card').forEach(item => {
+      gsap.utils.toArray('.service-card, .process-card, .testimonial, .list-item, .portfolio-card, .contact-card, .proof-card, .faq-item, .cta-box, .panel, .profile-card').forEach(item => {
         gsap.from(item, {
-          scrollTrigger: { trigger: item, start: 'top 90%' },
-          y: 14,
+          scrollTrigger: { trigger: item, start: 'top 88%' },
+          y: 18,
           opacity: 0,
-          duration: 0.5,
+          duration: 0.62,
           ease: 'power2.out'
         });
       });
 
-      const heroImage = document.getElementById('heroImage');
-      if (heroImage) {
-        gsap.to('#heroImage', {
-          yPercent: 5,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: '.hero',
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true
-          }
-        });
-      }
-    });
+      gsap.to('#heroImage', {
+        yPercent: 8,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    }
 
     const sections = document.querySelectorAll('main section[id]');
     const navAnchors = document.querySelectorAll('.nav-links a');
